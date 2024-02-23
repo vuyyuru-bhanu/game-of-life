@@ -8,7 +8,6 @@ trigger:
 
 pool:
   name: test
-  
 steps:
 - task: Maven@3
   inputs:
