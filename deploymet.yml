@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: game-of-life
+  labels:
+    app: game-of-life
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: game-of-life
+  template:
+    metadata:
+      labels:
+        app: game-of-life
+    spec:
+      containers:
+      - name: game-of-life
+        image: bhanu3333/kube:replaceImageTag
+        ports:
+        - containerPort: 8080
