@@ -9,7 +9,7 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'echo passed'
-        //git branch: 'test', url: 'https://github.com/vuyyuru-bhanu/spring-petclinic'
+        //git branch: 'test', url: 'https://github.com/vuyyuru-bhanu/game-of-life'
       }
     }
     stage('Build and Test') {

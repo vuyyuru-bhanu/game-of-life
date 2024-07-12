@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: game-of-life
-        image: bhanu3333/kube:replaceImageTag
+        image: bhanu3333/kube:5
         ports:
         - containerPort: 8080
